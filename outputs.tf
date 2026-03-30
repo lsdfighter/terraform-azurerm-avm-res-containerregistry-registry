@@ -20,6 +20,7 @@ output "resource" {
 output "resource_id" {
   description = "The resource id for the parent resource."
   value       = azurerm_container_registry.this.id
+  sensitive   = true
 }
 
 output "scope_maps" {
